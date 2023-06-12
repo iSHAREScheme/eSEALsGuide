@@ -9,7 +9,7 @@ eIDAS provides a link to find the current issuers per country:
 
 [https://eidas.ec.europa.eu/efda/tl-browser/#/screen/home]
 
-Browse to the link above and select your country --> select the preferred Certificate Authority then expand the section with the title =="Qualified certificate for electronic seal"== and it shows the names of the issuer who can issue this kind of certificate. When requesting certificate from your CA, please make sure to ask them that the resulting certificate will be issued by one of the issuers mentioned in this link. This is important as only certificates issued by issuers listed on the link above are accepted.
+Browse to the link above and select your country --> select the preferred Certificate Authority then expand the section with the title **"Qualified certificate for electronic seal"** and it shows the names of the issuer who can issue this kind of certificate. When requesting certificate from your CA, please make sure to ask them that the resulting certificate will be issued by one of the issuers mentioned in this link. This is important as only certificates issued by issuers listed on the link above are accepted.
 
 ### Country/Certificate Authority specific guide
 
