@@ -20,4 +20,4 @@ Depending on your internal application architecture and security requirements yo
 If you selected Non-QSCD option, you will be asked to provide a CSR file, kindly follow the process mentioned below:
 
 You can generate a CSR using following guide
-[Refer to CSR guide here:] (../CSR.md)
+[Refer to CSR guide here:](../CSR.md)
