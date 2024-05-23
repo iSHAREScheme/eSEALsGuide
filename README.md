@@ -18,8 +18,9 @@ Process to get eSEAL from specific CA is listed below by the name of the CA. Eac
 | Certificate Authority | Country | Issuer process |
 | ----------------------|---------|---------------------------------------|
 | QuoVadis Trustlink B.V. | Netherlands | [QuoVadis EU Issuing Certification Authority G4](quovadis/quovadis-eSEAL-NL.md)|
+| Digidentity | Netherlands | As of May '24, Digidentity does not provide eSeal certificates in the form required for implementing iSHARE |
 
-> **_NOTE:_** iSHARE Foundation has no affliation with QuoVadis and nor promotes it in any way. The guide here to acquire eSEAL certificate is provided based on experience iSHARE Foundation itself had in the process of acquiring the certificate and is provided for educational purposes only. Other providers process can be contributed by either themselves or by community memnbers for benefit of others.
+> **_NOTE:_** iSHARE Foundation has no affliation with QuoVadis or Digidentity and nor promotes it in any way. The guide here to acquire eSEAL certificate is provided based on experience iSHARE Foundation itself had in the process of acquiring the certificate and is provided for educational purposes only. Other providers process can be contributed by either themselves or by community memnbers for benefit of others.
 
 
 
