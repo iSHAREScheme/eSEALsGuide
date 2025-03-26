@@ -1,27 +1,22 @@
-# Getting eSEAL eIDAS certificate in NL from Quo-Vadis
-
+# Getting eSEAL eIDAS certificate in NL from Digicert QuoVadis
 
 > [!NOTE]
-> This is guide based on experience and for latest process always check with Quovadis.
+> This is guide based on experience and for latest process always check with Digicert QuoVadis.
 
+## What you need to prepare
 
-** What you need to prepare **
 1. KvK uittreksel
 2. Identity documents of 'bevoegd bestuurder(s)'
 3. Identity documents of certificate manager (can also be the bestuurder)
 4. Payment form (invoice, creditcard or iDeal)
 
-** Application in Quovadis webshop **
-1. Go to https://quovadissupport.nl/modules/
-2. Select Quovadis Qualified eSeal certificaat
+## Application in Digicert QuoVadis webshop
+
+1. Go to https://quovadissupport.nl/modules/?ts=1742984863
+2. For qualified eSeals select QuoVadis Qualified eSeal Certificaat; for advanced certificates select QuoVadis Advanced+ eSeal Certificaat
 3. Walk through the process
-4. If prompted, select the form factor **software** for the certificate, as this results into a digital certificate file. Not the HSM or USB version. Previously, the this option was called Non-QCSD, which resulted in a digital certificate file.
 
-> [!WARNING]
-> Depending on your internal application architecture and security requirements you must ask for your digital certifcate in appropriate form. If you do use specific security instruments like HSMs or valuts the please select the right option or check with the CA for the right option. If you are not sure about it please ask for a digital certificate in a file which can be deployed in your application. Ofcourse do not forgot the appropriate security measures as per your organisations policies. 
+### For advanced eSeals
 
-** After application, you receive a request to generate a CSR **
-If you selected form factor Software/Non-QSCD option, you will be asked to provide a CSR file, kindly follow the process mentioned below:
-
-You can generate a CSR using following guide
-[Refer to CSR guide here:](../CSR.md)
+4. If prompted, select the form factor **software** for the certificate (also called Non-QCSD), as this results into a digital certificate file. Not the HSM or USB version.
+5. After application, if you selected form factor Software/Non-QSCD option, you will be asked to provide a CSR file, kindly refer to [this guide on CSRs](../CSR.md).
