@@ -6,7 +6,7 @@
 The [iSHARE Framework](https://framework.ishare.eu) requires participants that take part in machine-to-machine (M2M) communication (for instance the consumption of APIs) to use advanced or qualified eIDAS eSeals (as stated in the [admission criteria](https://framework.ishare.eu/detailed-descriptions/operational/operational-processes/admission#admission-admissioncriteria)). This repository explains how qualified and advanced eIDAS eSeals can be purchased and used in the context of the iSHARE Framework. This repo furthermore contains a registration of self experience with qualified eSeal providers and aims to lower barriers to procure and use eIDAS eSeals.
 
 > [!NOTE]  
-> This guide is provided as a help to participants and provided based on personal experience or with the CA's themselves. Although all care is being taken while providing the content, neither iSHARE Foundation nor the contributors can be held liable for any incorrectness or errors or any loss you may incur. It is highly encouraged of you to also contribute to this guide for new content or provide correct/latest information to help fellow participants.
+> This guide is provided as a help to participants and provided based on personal experience or from the CA's themselves. Although all care is being taken while providing the content, neither iSHARE Foundation nor the contributors can be held liable for any incorrectness or errors or any loss you may incur. It is highly encouraged of you to also contribute to this guide for new content or provide correct/latest information to help fellow participants.
 
 ## Choosing the right Certificate Authority and the right issuer
 

@@ -1,6 +1,6 @@
 # Digidentity eSeal procurement guide
 
-This file explains how to procure an eIDAS Qualified eSeal from Digidentity.
+This file explains how to procure an eIDAS Qualified eSeal from Digidentity. When procuring an eSeal from Digidentity, the eSeal is provided in the Digidentity cloud HSM and not on a USB token or smartcard.
 
 ## Procurement process
 

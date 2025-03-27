@@ -1,5 +1,7 @@
 # Getting eSEAL eIDAS certificate in NL from Digicert QuoVadis
 
+This manual explains how to procure qualified or advanced eSeals from Digicert QuoVadis.
+
 > [!NOTE]
 > This is guide based on experience and for latest process always check with Digicert QuoVadis.
 
