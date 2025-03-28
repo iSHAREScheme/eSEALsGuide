@@ -1,11 +1,14 @@
 # Generating CSR to be sent to you CA
 
-When requested by your CA, you must generate a CSR for your ceritificate request. There are various ways through which you can generate one. 
->Never generate one using online tools!
+When requested by your CA, you must generate a CSR for your certificate request. There are various ways through which you can generate one.
 
-Refer to following link which lists various options on how to generate a CSR [https://www.digicert.com/kb/csr-creation.htm]
+>[!WARNING]
+>Never generate a CSR using online tools!
 
-For convenience I have listed process for how to do it on Mac OS and what options to use. If you use another method, please note the options used below
+Refer to following link which lists various options on how to generate a CSR [https://www.digicert.com/kb/csr-creation.htm](https://www.digicert.com/kb/csr-creation.htm)
+
+For convenience here is the process for how to do it on Mac OS and what options to use. If you use another method, please note the options used below
+
 For MacOS users:
 
 - Open Keychain Access app (you can use cmd+space to search for the keychain access app or find in "Other" folder under your "Launchpad")
@@ -18,7 +21,8 @@ For MacOS users:
 - Algorithm must be RSA
 - Done.
 
-The CSR file is generated and saved at the choosen location. This file must be sent to your CA (or uploaded on their portal)
+The CSR file is generated and saved at the chosen location. This file must be sent to your CA (or uploaded on their portal)
 The Private key is also stored in the keychain and can be exported from it.
 
->BEWARE: on the system you generate your CSR you also generate and store the private key. It is important to keep private key secure at all times. 
+>[!WARNING]
+>BEWARE: on the system you generate your CSR you also generate and store the private key. It is important to keep private key secure at all times.
