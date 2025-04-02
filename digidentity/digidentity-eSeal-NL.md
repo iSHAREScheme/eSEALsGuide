@@ -8,6 +8,9 @@ This file explains how to procure an eIDAS Qualified eSeal from Digidentity. Whe
 - Click on this page on 'Direct eSeal aanvragen' to start the procurement process
 - Reach out to Digidentity to request access to the Autosigner
 
+> [!NOTE]
+> When using the Digidentity Autosigner, usage charges may apply.
+
 ## Using the eSeal
 
 The eSeal can be used to sign JWTs using the [autosigner API](https://docs.digidentity.com/#912f1f8e-8e93-4e5c-ba14-1b0ae7175fca).
