@@ -40,14 +40,17 @@ Process to get eSEAL from specific CA is listed below by the name of the CA. Eac
 
 ### The Netherlands
 
-| Certificate Authority | Qualified eSeal                  | Advanced eSeal | Issuer process                                |
-|-----------------------|----------------------------------|----------------|-----------------------------------------------|
-| Digicert QuoVadis     | Yes (USB, HSM, QuoVadis HSM)     | Yes            | [link](./quovadis/quovadis-eSEAL-NL.md)       |
-| Digidentity           | Yes (Digidentity HSM)            | No             | [link](./digidentity/digidentity-eSeal-NL.md) |
-| KPN                   | Yes (USB, Smartcard, Phone, HSM) | No             | [link](./kpn/kpn-eSeal-NL.md)                 |
+| Certificate Authority | Qualified eSeal                      | Advanced eSeal | Issuer process                                |
+|-----------------------|--------------------------------------|----------------|-----------------------------------------------|
+| Digicert QuoVadis     | Yes (USB, QuoVadis HSM)              | Yes            | [link](./quovadis/quovadis-eSEAL-NL.md)       |
+| Digidentity           | Yes (Digidentity HSM)                | No             | [link](./digidentity/digidentity-eSeal-NL.md) |
+| KPN                   | Yes (USB, Smartcard, Phone, KPN HSM) | No             | [link](./kpn/kpn-eSeal-NL.md)                 |
 
 > [!NOTE]
 > iSHARE Foundation has no affiliation with any provider (CA) and nor promotes them in any way. The guides here are provided based on experience to acquire eSEAL certificates and are provided for educational purposes only. Additional providers' process can be contributed by either themselves or by community members for benefit of others.
+
+> [!NOTE]
+> When using a HSM provided by the certificate authority, usage charges may apply.
 
 ### Generating CSR when requested by your Certificate Authority
 
