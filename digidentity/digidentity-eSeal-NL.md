@@ -6,6 +6,7 @@ This file explains how to procure an eIDAS Qualified eSeal from Digidentity. Whe
 
 - Product information is available [here](https://www.digidentity.eu/nl/services/e-signatures/e-seal-qualified-and-autosign)
 - Click on this page on 'Direct eSeal aanvragen' to start the procurement process
+- The onboarding process is fully digitized and requires no paperwork
 - Reach out to Digidentity to request access to the Autosigner
 
 > [!NOTE]

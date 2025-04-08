@@ -43,7 +43,7 @@ Process to get eSEAL from specific CA is listed below by the name of the CA. Eac
 | Certificate Authority | Qualified eSeal                      | Advanced eSeal | Issuer process                                |
 |-----------------------|--------------------------------------|----------------|-----------------------------------------------|
 | Digicert QuoVadis     | Yes (USB, QuoVadis HSM)              | Yes            | [link](./quovadis/quovadis-eSEAL-NL.md)       |
-| Digidentity           | Yes (Digidentity HSM)                | No             | [link](./digidentity/digidentity-eSeal-NL.md) |
+| Digidentity           | Yes (Smartcard phone, Digidentity HSM)                | No             | [link](./digidentity/digidentity-eSeal-NL.md) |
 | KPN                   | Yes (USB, Smartcard, Phone, KPN HSM) | No             | [link](./kpn/kpn-eSeal-NL.md)                 |
 
 > [!NOTE]
