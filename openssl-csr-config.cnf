@@ -1,0 +1,18 @@
+[ req ]
+default_bits = 2048
+prompt = no
+distinguished_name = dn
+req_extensions = v3_req
+oid_section = custom_oids
+
+[ custom_oids ]
+organizationIdentifier = 2.5.4.97
+
+[ dn ]
+C = NL                                  #Replace with actual 2 letter country code
+O = Test B.V.                           #Replace with company name
+CN = Test B.V.                          #Replace with company name
+organizationIdentifier = NTRNL-12345678 #Replace with ETSI EN 319 412-1 compliant organization identifier
+
+[ v3_req ]
+keyUsage = critical, digitalSignature, nonRepudiation

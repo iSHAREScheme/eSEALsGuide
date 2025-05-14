@@ -34,7 +34,9 @@ We don't offer specific information about creating CSRs in specific Keyvaults. M
 
 ## 2. CSR creation with OpenSSL
 
-Use the following config file as a template and fill it with your own information.
+The following section has been tested with OpenSSL 3.3.2 on Windows (find installable [here](https://github.com/openssl/openssl/wiki/Binaries)) and should work with OpenSSL 3.x on any system. 
+
+Use the following config file as a template and fill it with your own information. Store as `openssl-csr-config.cnf`. Available as download [here](./openssl-csr-config.cnf).
 
 ```ini
 [ req ]
@@ -57,13 +59,17 @@ organizationIdentifier = NTRNL-12345678 #Replace with ETSI EN 319 412-1 complian
 keyUsage = critical, digitalSignature, nonRepudiation
 ```
 
+>[!NOTE]
+>DN can be extended with other known attributes if preferred/required
+
 Then run the following command to create a private key:
 
 ```bash
 openssl genpkey -algorithm RSA -out private.key -pkeyopt rsa_keygen_bits:2048 -aes256
 ```
 
-Remark: If you don't want to secure the private key with a password, omit the -aes256 option.
+>[!NOTE]
+>If you don't want to secure the private key with a password, omit the -aes256 option.
 
 Finally run the following command to create the CSR:
 
