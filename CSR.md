@@ -11,7 +11,7 @@ When requested by your CA, you must generate a CSR for your certificate request.
 
 ## Specific eIDAS certificate requirements
 
-When creating a CSR, make sure you comply with eIDAS specific requirements for certificates. The following requirements are relevant:
+An eIDAS certificate must comply with eIDAS specific requirements for certificates. The following requirements are relevant:
 
 - Include mandatory attributes for legal persons ([ETSI EN 319 412-2](https://www.etsi.org/deliver/etsi_en/319400_319499/31941202/02.02.02_60/en_31941202v020202p.pdf)):
   - organizationName (2.5.4.10)
@@ -28,6 +28,13 @@ Summary for eIDAS Qualified eSeal Certificates:
 | `organizationIdentifier` | 2.5.4.97 | Yes      | NTRNL-12345678 |
 | `commonName`             | 2.5.4.3  | Optional | Test B.V.      |
 
+## Follow instructions from your selected Certificate Authority (CA)
+
+When purchasing certificates from a CA, make sure to follow instructions from the CA. The CA could:
+
+- Option A: Require you to provide a CSR including the required eIDAS attributes or
+- Option B: Require you to provide a regular CSR, after which the CA will add any eIDAS specific attributes to the certificate
+
 ## 1. CSR creation from Keyvault
 
 We don't offer specific information about creating CSRs in specific Keyvaults. More background information is available in [this article about using eSeals and Keyvaults](https://trustbok.ishare.eu/apply-ishare/eseals-and-key-vaults).
@@ -36,7 +43,9 @@ We don't offer specific information about creating CSRs in specific Keyvaults. M
 
 The following section has been tested with OpenSSL 3.3.2 on Windows (find installable [here](https://github.com/openssl/openssl/wiki/Binaries)) and should work with OpenSSL 3.x on any system. 
 
-Use the following config file as a template and fill it with your own information. Store as `openssl-csr-config.cnf`. Available as download [here](./openssl-csr-config.cnf).
+Use one of the following config files as a template and fill it with your own information. Store as `openssl-csr-config.cnf`.
+
+### Option A: CSR including eIDAS attributes
 
 ```ini
 [ req ]
@@ -59,6 +68,28 @@ organizationIdentifier = NTRNL-12345678 #Replace with ETSI EN 319 412-1 complian
 keyUsage = critical, digitalSignature, nonRepudiation
 ```
 
+Available as download [here](./openssl-csr-config-eidas.cnf).
+
+### Option B: regular CSR, not including eIDAS attributes
+
+```ini
+[ req ]
+default_bits = 2048
+prompt = no
+distinguished_name = dn
+req_extensions = v3_req
+
+[ dn ]
+C = NL                                  #Replace with actual 2 letter country code
+O = Test B.V.                           #Replace with company name
+CN = Test B.V.                          #Replace with company name
+
+[ v3_req ]
+keyUsage = critical, digitalSignature, nonRepudiation
+```
+
+Available as download [here](./openssl-csr-config-regular.cnf).
+
 >[!NOTE]
 >DN can be extended with other known attributes if preferred/required
 
@@ -79,7 +110,7 @@ openssl req -new -key private.key -out testbv.csr -config openssl-csr-config.cnf
 
 ## 3. CSR creation with MacOS Keychain
 
-For convenience here is the process for how to do it on Mac OS and what options to use. If you use another method, please note the options used below
+For convenience here is the process for how to do it on Mac OS and what options to use. If you use another method, please note the options used below. This will lead to the creation of a regular CSR.
 
 For MacOS users:
 
