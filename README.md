@@ -18,15 +18,15 @@ If the link above does not automatically bring you to the list of eIDAS eSeal pr
 
 ### Qualified eSeals
 
-An eSeal consists of a public key (certificate) and a private key. For qualified eSeals, the private key is provided in and can only be used through a Qualified Signature/Seal Creation Device (CSCD). These devices come in the form of:
+An eSeal consists of a public key (certificate) and a private key. For qualified eSeals, the private key is provided in and can only be used through a Qualified Signature/Seal Creation Device (QSCD). These devices come in the form of:
 
 - USB-tokens
 - Smartcards
 - HSMs (Hardware Security Modules)
 
-If you plan on using a qualified eSeal, make sure that your application can use the CSCD to seal communication (iSHARE JWTs). With qualified eSeals the private key is **never** delivered as a file. In our experience it is very complex to use hardware tokens in a machine-to-machine scenario.
+If you plan on using a qualified eSeal, make sure that your application can use the QSCD to create eSeals (sign iSHARE JWTs). With qualified eSeals the private key is **never** delivered as a file, so make sure your application can use hardware tokens or an HSM.
 
-Some CA's provide a cloud HSM solution with which it is possible to sign in the cloud through a sign API provided by the CA. While this is technically a workable solution, this can lead to high operational costs and dependance on external services.
+Some CA's provide a cloud HSM solution with which it is possible to sign in the cloud through a sign API provided by the CA. While this is technically a workable solution, beware of projected operational costs and dependance on external services.
 
 These certificates are provided under the [QCP-l-qscd certificate policy](https://ec.europa.eu/digital-building-blocks/DSS/webapp-demo/apidocs/eu/europa/esig/dss/enumerations/CertificatePolicy.html).
 
@@ -36,7 +36,7 @@ Some parties also provide eiDAS advanced eSeals. For these kinds of eSeals the p
 
 A common method of securing private keys in this scenario is the use of Keyvaults. More background information is available [here](https://trustbok.ishare.eu/apply-ishare/eseals-and-key-vaults).
 
-Advanced eSeals are technically in a machine-to-machine scenario the most workable solution and accepted in iSHARE based data spaces.
+In machine-to-machine scenarios, Advanced eSeals are the most practical and accepted option in iSHARE-based data spaces, though they offer lower non-repudiation than Qualified eSeals, which are preferable for higher assurance.
 
 These certificates are provided under the [QCP-l certificate policy](https://ec.europa.eu/digital-building-blocks/DSS/webapp-demo/apidocs/eu/europa/esig/dss/enumerations/CertificatePolicy.html).
 
