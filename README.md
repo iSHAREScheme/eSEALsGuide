@@ -42,7 +42,7 @@ In machine-to-machine scenarios, Advanced eSeals are the most practical and acce
 
 These certificates are provided under the [QCP-l certificate policy](https://ec.europa.eu/digital-building-blocks/DSS/webapp-demo/apidocs/eu/europa/esig/dss/enumerations/CertificatePolicy.html).
 
-When purchasing you should look for: `eIDAS certificate for Advanced eSeals with certificate policy QCP-l-qscd`.
+When purchasing you should look for: `eIDAS certificate for Advanced eSeals with certificate policy QCP-l`.
 
 ### Make sure you will be able to use the eSeal
 
