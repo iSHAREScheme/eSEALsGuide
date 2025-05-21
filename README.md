@@ -30,6 +30,8 @@ Some CA's provide a cloud HSM solution with which it is possible to sign in the 
 
 These certificates are provided under the [QCP-l-qscd certificate policy](https://ec.europa.eu/digital-building-blocks/DSS/webapp-demo/apidocs/eu/europa/esig/dss/enumerations/CertificatePolicy.html).
 
+When purchasing you should look for: `eIDAS certificate for Qualified eSeals with certificate policy QCP-l-qscd`.
+
 ### Advanced eSeals
 
 Some parties also provide eiDAS advanced eSeals. For these kinds of eSeals the private key can be delivered as a file, or (better) using Certificate Signing Requests (CSR) where the you create the private key yourself and the key never leaves the system.
@@ -39,6 +41,8 @@ A common method of securing private keys in this scenario is the use of Keyvault
 In machine-to-machine scenarios, Advanced eSeals are the most practical and accepted option in iSHARE-based data spaces, though they offer lower non-repudiation than Qualified eSeals, which are preferable for higher assurance.
 
 These certificates are provided under the [QCP-l certificate policy](https://ec.europa.eu/digital-building-blocks/DSS/webapp-demo/apidocs/eu/europa/esig/dss/enumerations/CertificatePolicy.html).
+
+When purchasing you should look for: `eIDAS certificate for Advanced eSeals with certificate policy QCP-l`.
 
 ### Make sure you will be able to use the eSeal
 
