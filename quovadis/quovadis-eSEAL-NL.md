@@ -14,8 +14,8 @@ This manual explains how to procure qualified or advanced eSeals from Digicert Q
 
 ## Application in Digicert QuoVadis webshop
 
-1. Go to https://quovadissupport.nl/modules/?ts=1742984863
-2. For qualified eSeals select QuoVadis Qualified eSeal Certificaat; for advanced certificates select QuoVadis Advanced+ eSeal Certificaat
+1. Go to <https://www.digicert.com/qualified-certificates/compare-eu-document-signing?ev_comparision_chart=active>
+2. For select EU Qualified seal
 3. Walk through the process
 
 ### For advanced eSeals
