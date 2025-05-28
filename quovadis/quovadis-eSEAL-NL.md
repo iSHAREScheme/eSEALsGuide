@@ -12,16 +12,15 @@ This manual explains how to procure qualified or advanced eSeals from Digicert Q
 3. Identity documents of certificate manager (can also be the bestuurder)
 4. Payment form (invoice, creditcard or iDeal)
 
-## Application in Digicert QuoVadis webshop
+## Application in Digicert webshop
 
-1. Go to https://quovadissupport.nl/modules/?ts=1742984863
-2. For qualified eSeals select QuoVadis Qualified eSeal Certificaat; for advanced certificates select QuoVadis Advanced+ eSeal Certificaat
-3. Walk through the process
+1. Go to <https://certcentral.digicert.eu/>
+2. Select EU Qualified seal (not the PSD2 variant)
 
 ### For advanced eSeals
 
-4. If prompted, select the form factor **software** for the certificate (also called Non-QCSD), as this results into a digital certificate file. Not the HSM or USB version.
-5. After application, if you selected form factor Software/Non-QSCD option, you will be asked to provide a CSR file, kindly refer to [this guide on CSRs](../CSR.md).
+4. Under key delivery method select 'Provide Certificate Signing Request (CSR)'
+5. Upload your CSR (for more information about creating a CSR, see [this guide on CSRs](../CSR.md)).
 
 > [!WARNING]
 > Depending on your internal application architecture and security requirements you must ask for your digital certifcate in appropriate form. If you do use specific security instruments like HSMs or valuts the please select the right option or check with the CA for the right option. If you are not sure about it please ask for a digital certificate in a file which can be deployed in your application. Ofcourse do not forgot the appropriate security measures as per your organisations policies. 
