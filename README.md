@@ -52,6 +52,12 @@ Before ordering and paying for a certificate, please make sure that you are able
 
 Process to get eSEAL from specific CA is listed below by the name of the CA. Each CA or users must add their own process documentation along with country specifics if applicable to their own folder
 
+> [!NOTE]
+> iSHARE Foundation has no affiliation with any provider (CA) and nor promotes them in any way. The guides here are provided based on experience to acquire eSEAL certificates and are provided for educational purposes only. Additional providers' process can be contributed by either themselves or by community members for benefit of others.
+
+> [!NOTE]
+> When using a HSM provided by the certificate authority, usage charges may apply.
+
 ### The Netherlands
 
 | Certificate Authority | Can produce certificates for qualified eSeal | Can produce certificates for Advanced eSeal | Issuer process                                |
@@ -60,13 +66,13 @@ Process to get eSEAL from specific CA is listed below by the name of the CA. Eac
 | Digidentity           | Yes (Phone, Digidentity HSM)                 | No                                          | [link](./digidentity/digidentity-eSeal-NL.md) |
 | KPN                   | Yes (USB, Smartcard, Phone, KPN HSM)         | No                                          | [link](./kpn/kpn-eSeal-NL.md)                 |
 
-> [!NOTE]
-> iSHARE Foundation has no affiliation with any provider (CA) and nor promotes them in any way. The guides here are provided based on experience to acquire eSEAL certificates and are provided for educational purposes only. Additional providers' process can be contributed by either themselves or by community members for benefit of others.
+### Spain
 
-> [!NOTE]
-> When using a HSM provided by the certificate authority, usage charges may apply.
+| Certificate Authority | Can produce certificates for qualified eSeal | Can produce certificates for Advanced eSeal | Issuer process                                |
+|-----------------------|----------------------------------------------|---------------------------------------------|-----------------------------------------------|
+| Sectigo     | Yes (Physical Token)                      | Yes                                         | [link](./sectigo/sectigo-eseal.md)       |
 
-### Generating CSR when requested by your Certificate Authority
+## Generating CSR when requested by your Certificate Authority
 
 Often when requesting the certificate in file format (for advanced eSeals), the requestor is needed to provide a Certificate Singing Request (CSR) to the issuing CA. This is necessary to keep your private key private and secure as it must never be shared with others.
 
